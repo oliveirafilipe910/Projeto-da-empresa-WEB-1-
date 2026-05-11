@@ -1,0 +1,112 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column; /* Ajustado para empilhar o container e o footer */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+/* Container Principal */
+.container {
+    width: 95%;
+    max-width: 1100px; 
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 20px; /* Espaço entre a caixa e o rodapé */
+}
+
+.content-wrapper {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+}
+
+/* Imagem Inteira */
+.image-container {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; 
+    padding: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 550px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Formulário Estreito */
+.form-container {
+    flex: 0 0 auto; 
+    width: 350px; 
+    padding: 40px 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid #f0f0f0;
+}
+
+.form-content h2 { font-size: 1.5rem; margin-bottom: 8px; }
+.form-content p { font-size: 0.9rem; color: #666; margin-bottom: 25px; }
+
+.input-group { margin-bottom: 15px; }
+.input-group label { display: block; font-weight: bold; font-size: 0.85rem; margin-bottom: 5px; }
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.btn-enviar {
+    width: 100%;
+    background-color: #25d366;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover { background-color: #1ebd5b; }
+
+.site-link-wrapper { margin-top: 25px; text-align: center; }
+.link-site { color: #007bff; text-decoration: none; font-size: 0.85rem; }
+
+/* ESTILO DO RODAPÉ */
+.footer-copy {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.footer-copy p {
+    font-size: 0.8rem;
+    color: #888;
+    letter-spacing: 0.5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .content-wrapper { flex-direction: column; }
+    .form-container { width: 100%; border-left: none; }
+    .image-container img { max-height: 300px; }
+}

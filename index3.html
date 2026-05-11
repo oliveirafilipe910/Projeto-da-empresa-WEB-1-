@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado - LFRP Security</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            /* Fundo principal com a sua imagem */
+            background-image: url('imagem2.png');
+            
+            /* Ajustes para alta qualidade e resolução */
+            background-size: cover; /* Preenche a tela toda */
+            background-position: center; /* Centraliza a logo */
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Efeito de fundo fixo ao rolar */
+            
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f4f7; /* Cor de segurança */
+        }
+
+        .container-agradecimento {
+            /* Definindo a proporção de 1115x645 de forma responsiva */
+            max-width: 1115px;
+            width: 90%;
+            height: auto;
+            min-height: 400px;
+            
+            /* Vidro fosco (Glassmorphism) para destacar o texto sem esconder o fundo */
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px); 
+            
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        h1 {
+            color: #004a99;
+            font-size: 4rem; /* Texto grande e impactante */
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        p {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 35px;
+            font-weight: 500;
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            padding: 15px 45px;
+            background-color: #004a99;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 74, 153, 0.3);
+        }
+
+        .btn-voltar:hover {
+            background-color: #00bcd4;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
+        }
+
+        /* Ajuste para celulares */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            p { font-size: 1.1rem; }
+            .container-agradecimento { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-agradecimento">
+        <h1>Obrigado!!!</h1>
+        <p>Retornaremos em breve.</p>
+        <a href="index2.html" class="btn-voltar">Voltar ao Início</a>
+    </div>
+
+</body>
+</html>
